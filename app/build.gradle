@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.yzf.template"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+
+        }
+    }
+    dataBinding {
+        enabled true
+    }
+
+
+}
+repositories {
+    flatDir {
+        dirs 'libs' //就是你放aar的目录地址
+    }
+    maven { url "https://jitpack.io" }
+    maven {
+        url 'https://maven.google.com/'
+    }
+}
+dependencies {
+    implementation project(':RxKit')
+    implementation project(':RxUI')
+    //    implementation project(':RxCamera')
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    //cardView包
+    //appcompat包
+    //recyclerview包
+    //流式布局
+    //动画向下版本兼容 nineold包
+    //noinspection GradleCompatible
+
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.google.android:flexbox:0.3.2'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.jakewharton:butterknife:8.0.1'
+    //动画库
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    // If you want to use the GPU Filters
+//    implementation 'com.github.yalantis:ucrop:2.2.2-native'
+//    implementation 'com.jaredrummler:animated-svg-view:1.0.5'
+//    implementation 'cc.solart:turbo-recyclerview-helper:1.0.3-beta'
+//    implementation 'com.afollestad.material-dialogs:core:0.9.3.0'
+    //    implementation 'com.github.google:cameraview:3eaeac09a7'
+    implementation 'com.orhanobut:logger:2.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
+    configurations.all {
+        exclude group: 'com.android.support', module: 'support-v13'
+    }
+    api name: 'SMSSDK-2.1.3', ext: 'aar'
+    api files('libs/MobCommons-2016.1201.1839.jar')
+    api files('libs/MobTools-2016.1201.1839.jar')
+    implementation files('libs/umeng-common-1.5.3.jar')
+    implementation files('libs/umeng-sharetool-6.9.3.jar')
+    implementation files('libs/umeng-shareboard-widget-6.9.3.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-sina-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-core-6.9.3.jar')
+    // 引导页
+    api 'com.romandanylyk:pageindicatorview:0.0.7'
+    // 动画库
+    api 'com.eftimoff:androidplayer:1.0.3@aar'
+    // refreshLayout
+    api 'com.lcodecorex:tkrefreshlayout:1.0.5'
+    // banner
+    api 'cn.bingoogolapple:bga-banner:2.1.6@aar'
+    //首页轮播
+    implementation 'com.youth.banner:banner:+'
+    // 城市选择
+    api 'liji.library.dev:citypickerview:0.9.0'
+    implementation project(':core')
+    //glide 改http请求方式为okhttp   retrofit 添加加载图片进度
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.6.1'
+    //裁剪变换、颜色变换、模糊变换等等
+    implementation 'jp.wasabeef:glide-transformations:3.0.1'
+    implementation project(':progress')
+
+    //换肤
+    implementation 'skin.support:skin-support:2.2.3'                   // skin-support basic widget
+    implementation 'skin.support:skin-support-design:2.2.3'
+    // skin-support-design material design support [selectable]
+    implementation 'skin.support:skin-support-cardview:2.2.3'
+    // skin-support-cardview CardView support [selectable]
+    implementation 'skin.support:skin-support-constraint-layout:2.2.3'
+    // skin-support-constraint-layout ConstraintLayout support [selectable]
+
+    //sharepreference一样用 简单 安全
+    implementation 'com.orhanobut:hawk:2.0.1'
+    //进度条
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+    //检测内存溢出
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+}

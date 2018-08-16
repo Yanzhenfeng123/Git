@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/tab_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_one_img"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@mipmap/icon_news_select" />
+
+            <TextView
+                android:id="@+id/tab_one_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="资讯"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_two_img"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@mipmap/icon_project" />
+
+            <TextView
+                android:id="@+id/tab_two_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="项目"
+                android:textColor="@color/hint_middle_color"
+                android:textSize="@dimen/micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_three_img"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@mipmap/icon_activity" />
+
+            <TextView
+                android:id="@+id/tab_three_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="活动"
+                android:textColor="@color/hint_middle_color"
+                android:textSize="@dimen/micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_four_img"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@mipmap/icon_investment" />
+
+            <TextView
+                android:id="@+id/tab_four_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="找投资"
+                android:textColor="@color/hint_middle_color"
+                android:textSize="@dimen/micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_five_img"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@mipmap/icon_persion" />
+
+            <TextView
+                android:id="@+id/tab_five_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="我的"
+                android:textColor="@color/hint_middle_color"
+                android:textSize="@dimen/micro" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

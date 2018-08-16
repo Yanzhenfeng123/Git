@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_night">#636262</color>
+    <color name="bg_color_night">#636262</color>
+    <!-- 标题栏颜色 -->
+    <color name="titlebar_color_night">#636262</color>
+    <!-- 标题栏文字颜色 -->
+    <color name="titlebar_txt_color_night">#ffffff</color>
+    <!-- 标题分界线颜色 -->
+    <color name="title_line_color_night">#878685</color>
+    <!-- 分界线颜色 -->
+    <color name="line_color_night">#878685</color>
+    <!-- 标题颜色 深色文字 -->
+    <color name="title_color_night">#ffffff</color>
+    <!-- 主题颜色 -->
+    <color name="theme_color_night">#FFA500</color>
+
+    <color name="colorPrimary_night">#ff9a6a</color>
+    <color name="colorPrimaryDark_night">#ff9a6a</color>
+    <color name="colorAccent_night">#ff9a6a</color>
+    <color name="colorBlack_night">#666666</color>
+    <color name="colorBg_night">#636262</color>
+    <color name="colorBgDark_night">#878685</color>
+    <color name="colorTextBlack_night">#ffffff</color>
+    <color name="colorTextLight_night">#ffffff</color>
+    <color name="colorTrans_night">#00000000</color>
+    <color name="colorBottom_night">#949493</color>
+    <color name="colorTextColor_night">#ffffff</color>
+    <color name="colorTextColorDark_night">#efeeed</color>
+    <color name="colorTextColorLight2_night">#efeeed</color>
+    <color name="colorTextColorLight_night">#efeeed</color>
+    <color name="colorTrack_night">#535252</color>
+    <color name="colorWhite_night">#ffffff</color>
+    <color name="colorHintTextColorLight_night">#878685</color>
+    <color name="colorSearchHintTextColorLight_night">#878685</color>
+
+    <color name="colordialogTextBlack_night">#919191</color>
+    <color name="colordialogTextDark_night">#666666</color>
+    <color name="colordialogBottom_night">#363635</color>
+    <color name="colordialogPirmary_night">#663e2a</color>
+
+</resources>

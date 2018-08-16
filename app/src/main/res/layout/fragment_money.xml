@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/toolbar_layout"></include>
+
+    <TextView
+        android:id="@+id/alipy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="常见Dialog"
+        android:textColor="@color/title_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/title_line_color" />
+
+    <TextView
+        android:id="@+id/wechat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_color"
+        android:gravity="center"
+        android:text="可以拉伸加载的ScrollView"
+        android:textColor="@color/title_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/title_line_color" />
+
+
+    <ImageView
+        android:id="@+id/load_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>
